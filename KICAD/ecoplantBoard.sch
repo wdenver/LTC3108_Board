@@ -1,0 +1,308 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ltc3108:ltc3108 U?
+U 1 1 60A6C66D
+P 5700 2750
+F 0 "U?" H 5675 2915 50  0000 C CNN
+F 1 "ltc3108" H 5675 2824 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 5700 2750 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC3108.pdf" H 5700 2750 50  0001 C CNN
+	1    5700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A6CF76
+P 4800 2900
+F 0 "C?" V 4548 2900 50  0000 C CNN
+F 1 "0.01uF" V 4639 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4838 2750 50  0001 C CNN
+F 3 "~" H 4800 2900 50  0001 C CNN
+	1    4800 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 2900 5150 2900
+$Comp
+L Device:C C?
+U 1 1 60A6EB44
+P 4800 3300
+F 0 "C?" V 4548 3300 50  0000 C CNN
+F 1 "330p" V 4639 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4838 3150 50  0001 C CNN
+F 3 "~" H 4800 3300 50  0001 C CNN
+	1    4800 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3300 5150 3300
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 60A6F350
+P 3750 3100
+F 0 "T?" H 3750 3481 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 3750 3390 50  0000 C CNN
+F 2 "Transformer_THT:Transformer_Toroid_Horizontal_D12.5mm_Amidon-T44" H 3750 3100 50  0001 C CNN
+F 3 "~" H 3750 3100 50  0001 C CNN
+	1    3750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2900 4500 2900
+Wire Wire Line
+	4650 3300 4500 3300
+Wire Wire Line
+	4500 3300 4500 2900
+Connection ~ 4500 2900
+Wire Wire Line
+	4500 2900 4650 2900
+Wire Wire Line
+	4150 3300 4250 3300
+Wire Wire Line
+	4250 3300 4250 3350
+$Comp
+L power:GND #PWR?
+U 1 1 60A716D2
+P 4250 3350
+F 0 "#PWR?" H 4250 3100 50  0001 C CNN
+F 1 "GND" H 4255 3177 50  0000 C CNN
+F 2 "" H 4250 3350 50  0001 C CNN
+F 3 "" H 4250 3350 50  0001 C CNN
+	1    4250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3900 4250 3900
+Wire Wire Line
+	4250 3900 4250 4100
+$Comp
+L power:GND #PWR?
+U 1 1 60A71F7D
+P 4250 4100
+F 0 "#PWR?" H 4250 3850 50  0001 C CNN
+F 1 "GND" H 4255 3927 50  0000 C CNN
+F 2 "" H 4250 4100 50  0001 C CNN
+F 3 "" H 4250 4100 50  0001 C CNN
+	1    4250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A7228F
+P 5500 4900
+F 0 "C?" H 5385 4854 50  0000 R CNN
+F 1 "4.7uF" H 5385 4945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5538 4750 50  0001 C CNN
+F 3 "~" H 5500 4900 50  0001 C CNN
+	1    5500 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 4650 5500 4700
+$Comp
+L power:GND #PWR?
+U 1 1 60A72C4F
+P 5500 5200
+F 0 "#PWR?" H 5500 4950 50  0001 C CNN
+F 1 "GND" H 5505 5027 50  0000 C CNN
+F 2 "" H 5500 5200 50  0001 C CNN
+F 3 "" H 5500 5200 50  0001 C CNN
+	1    5500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5050 5500 5200
+Wire Wire Line
+	5150 4200 4800 4200
+Wire Wire Line
+	4800 4200 4800 4700
+Wire Wire Line
+	4800 4700 5500 4700
+Connection ~ 5500 4700
+Wire Wire Line
+	5500 4700 5500 4750
+Wire Wire Line
+	5700 4650 5700 4750
+Wire Wire Line
+	5700 4750 6000 4750
+Wire Wire Line
+	6000 4750 6000 4650
+$Comp
+L power:GND #PWR?
+U 1 1 60A73A6B
+P 6000 5200
+F 0 "#PWR?" H 6000 4950 50  0001 C CNN
+F 1 "GND" H 6005 5027 50  0000 C CNN
+F 2 "" H 6000 5200 50  0001 C CNN
+F 3 "" H 6000 5200 50  0001 C CNN
+	1    6000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5200 6000 4750
+Connection ~ 6000 4750
+Wire Wire Line
+	3350 3300 3150 3300
+Wire Wire Line
+	3150 3300 3150 3600
+Wire Wire Line
+	3150 3600 5150 3600
+$Comp
+L Device:CP C?
+U 1 1 60A76DB4
+P 2500 3150
+F 0 "C?" H 2618 3196 50  0000 L CNN
+F 1 "220uF" H 2618 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.2" H 2538 3000 50  0001 C CNN
+F 3 "~" H 2500 3150 50  0001 C CNN
+	1    2500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2900 3350 2900
+Wire Wire Line
+	2500 2900 2500 3000
+$Comp
+L power:GND #PWR?
+U 1 1 60A77B30
+P 2500 3450
+F 0 "#PWR?" H 2500 3200 50  0001 C CNN
+F 1 "GND" H 2505 3277 50  0000 C CNN
+F 2 "" H 2500 3450 50  0001 C CNN
+F 3 "" H 2500 3450 50  0001 C CNN
+	1    2500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3450 2500 3350
+Wire Wire Line
+	2500 2900 1900 2900
+Connection ~ 2500 2900
+Wire Wire Line
+	2500 3350 1900 3350
+Connection ~ 2500 3350
+Wire Wire Line
+	2500 3350 2500 3300
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60A79DBC
+P 1700 3200
+F 0 "J?" H 1618 2875 50  0000 C CNN
+F 1 "INPUT" H 1618 2966 50  0000 C CNN
+F 2 "" H 1700 3200 50  0001 C CNN
+F 3 "~" H 1700 3200 50  0001 C CNN
+	1    1700 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 3200 1900 3350
+Wire Wire Line
+	1900 3100 1900 2900
+$Comp
+L Device:C C?
+U 1 1 60A8239C
+P 7500 3800
+F 0 "C?" H 7385 3754 50  0000 R CNN
+F 1 "330p" H 7385 3845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7538 3650 50  0001 C CNN
+F 3 "~" H 7500 3800 50  0001 C CNN
+	1    7500 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 3600 7500 3650
+Wire Wire Line
+	6200 3600 7500 3600
+$Comp
+L power:GND #PWR?
+U 1 1 60A83210
+P 7500 5200
+F 0 "#PWR?" H 7500 4950 50  0001 C CNN
+F 1 "GND" H 7505 5027 50  0000 C CNN
+F 2 "" H 7500 5200 50  0001 C CNN
+F 3 "" H 7500 5200 50  0001 C CNN
+	1    7500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3950 7500 4050
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 60A8579A
+P 6850 4500
+F 0 "BT?" H 6968 4596 50  0000 L CNN
+F 1 "Li-Ion" H 6968 4505 50  0000 L CNN
+F 2 "Battery:BatteryHolder_MPD_BH-18650-PC2" V 6850 4560 50  0001 C CNN
+F 3 "~" V 6850 4560 50  0001 C CNN
+	1    6850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3900 6850 4100
+Wire Wire Line
+	6200 3900 6850 3900
+Wire Wire Line
+	6850 4600 6850 4900
+Wire Wire Line
+	6850 4900 7500 4900
+Connection ~ 7500 4900
+Wire Wire Line
+	7500 4900 7500 5200
+Wire Wire Line
+	6850 4100 8100 4100
+Connection ~ 6850 4100
+Wire Wire Line
+	6850 4100 6850 4300
+Wire Wire Line
+	7500 4900 8100 4900
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60A8ADF3
+P 8300 4550
+F 0 "J?" H 8218 4225 50  0000 C CNN
+F 1 "BATTERY" H 8218 4316 50  0000 C CNN
+F 2 "" H 8300 4550 50  0001 C CNN
+F 3 "~" H 8300 4550 50  0001 C CNN
+	1    8300 4550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 4550 8100 4900
+Wire Wire Line
+	8100 4100 8100 4450
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60A928FD
+P 8300 3700
+F 0 "J?" H 8218 3375 50  0000 C CNN
+F 1 "2.2V" H 8218 3466 50  0000 C CNN
+F 2 "" H 8300 3700 50  0001 C CNN
+F 3 "~" H 8300 3700 50  0001 C CNN
+	1    8300 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 3600 7500 3600
+Connection ~ 7500 3600
+Wire Wire Line
+	7500 4050 8100 4050
+Wire Wire Line
+	8100 4050 8100 3700
+Connection ~ 7500 4050
+Wire Wire Line
+	7500 4050 7500 4900
+$EndSCHEMATC
